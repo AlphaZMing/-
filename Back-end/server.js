@@ -12,7 +12,5 @@ server.use(bodyParser.urlencoded({}));
 
 server.use(express.static('view'));
 
-console.log('张宏铭用来验证');
-
 //登陆验证
 server.use('/', require('./router/identify')());
